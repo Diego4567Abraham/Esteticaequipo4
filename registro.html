@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>TIENDA INFORMATICA</title>
+
+		<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+	<header id="main-header">
+		<nav>
+			<ul>
+                <li><a href="index.html">Inicio</a></li>
+				<li><a href="productos.html">Productos</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav><!-- / nav -->
+	</header><!-- / #main-header -->
+
+	
+	<section id="main-content">
+            
+		<article>
+			<header>
+                            <h1>Computer store</h1>
+                        <div>
+			<hr>
+                            <br>
+            <script src="js/validacion.js"></script>        
+        <form name="formulario" method="post" action="AgregarU" onsubmit="return validar()">
+                <h2> Agregar Usuario </h2>
+                <table border="0" width="100%">
+                <tr><td>Nombre:</td><td>
+                <input type="text" name="nom_usu" id="nom_usu" size="40" onkeypress="return validarN(event)" maxlength="40"></td></tr>
+                <br>
+                <tr><td>Apellido Paterno:</td><td> 
+                <input type="text" name="appat_usu" id="appat_usu" size="40" onkeypress="return validarN(event)" maxlength="40"></td></tr>
+                <br>
+                <tr><td>Apellido Materno:</td><td> 
+                <input type="text" name="apmat_usu" id="apmat_usu" size="40" onkeypress="return validarN(event)" maxlength="40"></td></tr>
+                <br>
+                <tr><td>Telefono:</td><td> 
+                <input type="text" name="tel_usu" id="tel_usu" size="40" onkeypress="return validarL(event)" maxlength="10"></td></tr>
+                <br>
+                <td></td>
+               <td>  <br><input type="submit" value="Registrar Usuario"></td>
+                </table>
+            </form>
+                        </div>
+                                
+                        <div>
+                            <br>
+                            <form method="post" action="ConsultaU" onsubmit="">
+                                           <table border="0" width="100%">
+                                               <br>
+                                               <h2>Consultar Usuarios</h2>                      
+                                               <br>
+                                               <br>
+      
+                                                  <tr>
+                                                      <td style="width:260px;">Usuarios del sistema:</td>
+                                                      <td><input type="submit" value="Click para consultar"></td>
+                                                  </tr>
+                                          </table>
+                                               <br>
+                              </form>
+                      </div>
+			</header>
+
+
+		</article> <!-- /article -->
+	
+	</section> <!-- / #main-content -->
+</body>
+</html>
